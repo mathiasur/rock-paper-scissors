@@ -170,6 +170,13 @@ a:hover {
     text-decoration-line: underline;
 }
 
+.block {
+    display: none;
+    z-index: 9;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
 
 .select-menu {
     display: none;
@@ -177,9 +184,9 @@ a:hover {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    z-index: 10;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
+    z-index: 10;
     align-items: center;
     justify-content: center;
     color: white;
@@ -227,3 +234,15 @@ a:hover {
     font-size: 80px;
 }
 
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation: animation 1s linear;
+}
